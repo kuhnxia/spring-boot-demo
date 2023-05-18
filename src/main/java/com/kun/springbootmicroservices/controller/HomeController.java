@@ -16,14 +16,14 @@ public class HomeController {
     @GetMapping("/user")
     public User user(){
         User user = new User();
-        user.setId(1);
+        user.setId("1");
         user.setName("Kun");
         user.setEmail("kun@gmail.com");
 
         return user;
     }
     @GetMapping("/{id1}/{id2}")
-    public String pathVariable(@PathVariable int id1, @PathVariable("id2") String name){
+    public String pathVariable(@PathVariable String id1, @PathVariable("id2") String name){
         return "The id is: " + id1 + ", the name is: " + name;
     }
 

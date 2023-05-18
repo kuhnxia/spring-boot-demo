@@ -1,15 +1,15 @@
 package com.kun.springbootmicroservices.model;
 
 public class User {
-    private int id;
+    private String id;
     private String name;
     private String email;
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
