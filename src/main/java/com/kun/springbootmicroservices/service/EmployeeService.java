@@ -2,6 +2,12 @@ package com.kun.springbootmicroservices.service;
 
 import com.kun.springbootmicroservices.model.Employee;
 
+import java.util.List;
+
 public interface EmployeeService {
-    public Employee save(Employee employee);
+    Employee save(Employee employee);
+
+    List<Employee> getAllEmployees();
+
+    Employee getEmployeeById(String id);
 }
