@@ -1,5 +1,6 @@
 package com.kun.springbootmicroservices.service;
 
+import com.kun.springbootmicroservices.error.EmployeeNotFoundException;
 import com.kun.springbootmicroservices.model.Employee;
 import org.springframework.stereotype.Service;
 
@@ -27,14 +28,9 @@ public class EmployeeServiceImpl implements EmployeeService{
 
     @Override
     public Employee getEmployeeById(String id) {
-        return employees.stream().
-                filter(employee -> employee.getId().equals(id)).
-                findFirst().get();
-       /* Employee target = null;
-        for (Employee employee: employees) {
-            if (employee.getId().equals(id))
-                target = employee;
-        }
-        return target;*/
+        return employees.stream()
+                .filter(employee -> employee.getId().equals(id))
+                .findFirst()
+                .orElseThrow(()-> new RuntimeException("Employee not found by Id"+ id));
     }
 }
