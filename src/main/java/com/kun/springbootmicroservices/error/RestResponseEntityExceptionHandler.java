@@ -16,10 +16,10 @@ public class RestResponseEntityExceptionHandler
         return new ErrorMessage(HttpStatus.NOT_FOUND, exception.getMessage());
     }
 
-    @ExceptionHandler(RuntimeException.class)
+    @ExceptionHandler(Exception.class)
     @ResponseBody
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
-    public ErrorMessage genericExceptionHandler(RuntimeException exception){
+    public ErrorMessage genericExceptionHandler(Exception exception){
         return new ErrorMessage(HttpStatus.INTERNAL_SERVER_ERROR, exception.getMessage());
     }
 }
