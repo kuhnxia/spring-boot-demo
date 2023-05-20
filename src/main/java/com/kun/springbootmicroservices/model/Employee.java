@@ -1,5 +1,8 @@
 package com.kun.springbootmicroservices.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+
+@JsonIgnoreProperties({"department"})
 public class Employee {
     private String id;
     private String firstName;
