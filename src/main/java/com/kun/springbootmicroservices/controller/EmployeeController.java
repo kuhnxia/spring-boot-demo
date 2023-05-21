@@ -3,6 +3,7 @@ package com.kun.springbootmicroservices.controller;
 import com.kun.springbootmicroservices.model.Employee;
 import com.kun.springbootmicroservices.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -10,6 +11,7 @@ import java.util.List;
 @RestController
 @RequestMapping("v1/employees")
 public class EmployeeController {
+    @Qualifier("employeeServiceImpl")
     @Autowired
     private EmployeeService employeeService;
     @PostMapping
