@@ -40,4 +40,10 @@ public class EmployeeServiceImpl implements EmployeeService{
         employees.remove(employee);
         return "Employee is deleted with the id: " + id;
     }
+
+    @Override
+    public String deleteAllEmployees() {
+        employees = new ArrayList<>();
+        return "All employees are deleted";
+    }
 }
