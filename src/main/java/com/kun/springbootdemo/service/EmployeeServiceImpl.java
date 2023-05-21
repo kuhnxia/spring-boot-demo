@@ -1,7 +1,7 @@
-package com.kun.springbootmicroservices.service;
+package com.kun.springbootdemo.service;
 
-import com.kun.springbootmicroservices.error.EmployeeNotFoundException;
-import com.kun.springbootmicroservices.model.Employee;
+import com.kun.springbootdemo.error.EmployeeNotFoundException;
+import com.kun.springbootdemo.model.Employee;
 import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;

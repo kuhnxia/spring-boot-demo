@@ -1,8 +1,8 @@
-package com.kun.springbootmicroservices.service;
+package com.kun.springbootdemo.service;
 
-import com.kun.springbootmicroservices.entity.EmployeeEntity;
-import com.kun.springbootmicroservices.model.Employee;
-import com.kun.springbootmicroservices.repository.EmployeeRepository;
+import com.kun.springbootdemo.entity.EmployeeEntity;
+import com.kun.springbootdemo.model.Employee;
+import com.kun.springbootdemo.repository.EmployeeRepository;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,4 +1,4 @@
-package com.kun.springbootmicroservices.model;
+package com.kun.springbootdemo.model;
 
 import org.springframework.http.HttpStatus;
 

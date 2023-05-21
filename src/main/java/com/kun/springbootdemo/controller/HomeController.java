@@ -1,7 +1,6 @@
-package com.kun.springbootmicroservices.controller;
+package com.kun.springbootdemo.controller;
 
-import com.kun.springbootmicroservices.model.User;
-import org.springframework.stereotype.Controller;
+import com.kun.springbootdemo.model.User;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

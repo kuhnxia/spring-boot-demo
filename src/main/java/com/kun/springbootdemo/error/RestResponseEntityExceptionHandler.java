@@ -1,7 +1,6 @@
-package com.kun.springbootmicroservices.error;
+package com.kun.springbootdemo.error;
 
-import com.kun.springbootmicroservices.model.ErrorMessage;
-import org.apache.logging.log4j.message.Message;
+import com.kun.springbootdemo.model.ErrorMessage;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;

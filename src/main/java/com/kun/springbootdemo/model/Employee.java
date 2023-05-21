@@ -1,14 +1,7 @@
-package com.kun.springbootmicroservices.entity;
+package com.kun.springbootdemo.model;
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
-@Entity
-@Table(name = "tbl_employee")
-public class EmployeeEntity {
-
-    @Id
+//@JsonIgnoreProperties({"department"})
+public class Employee {
     private String employeeId;
     private String firstName;
     private String lastName;

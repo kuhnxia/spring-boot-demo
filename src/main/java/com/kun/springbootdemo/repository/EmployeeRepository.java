@@ -1,6 +1,6 @@
-package com.kun.springbootmicroservices.repository;
+package com.kun.springbootdemo.repository;
 
-import com.kun.springbootmicroservices.entity.EmployeeEntity;
+import com.kun.springbootdemo.entity.EmployeeEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

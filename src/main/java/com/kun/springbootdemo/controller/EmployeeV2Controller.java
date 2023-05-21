@@ -1,7 +1,7 @@
-package com.kun.springbootmicroservices.controller;
+package com.kun.springbootdemo.controller;
 
-import com.kun.springbootmicroservices.model.Employee;
-import com.kun.springbootmicroservices.service.EmployeeService;
+import com.kun.springbootdemo.model.Employee;
+import com.kun.springbootdemo.service.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;

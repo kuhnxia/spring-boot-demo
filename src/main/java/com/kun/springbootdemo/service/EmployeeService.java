@@ -1,6 +1,6 @@
-package com.kun.springbootmicroservices.service;
+package com.kun.springbootdemo.service;
 
-import com.kun.springbootmicroservices.model.Employee;
+import com.kun.springbootdemo.model.Employee;
 
 import java.util.List;
 
